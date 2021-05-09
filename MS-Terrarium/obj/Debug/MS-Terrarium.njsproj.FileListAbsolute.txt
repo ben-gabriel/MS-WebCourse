@@ -1,0 +1,3 @@
+C:\Users\sergi\Desktop\Code\MS-WebDev\MS-WebDev Course\MS-Terrarium\obj\Debug\MS-Terrarium.njsprojAssemblyReference.cache
+C:\Users\sergi\Desktop\Code\MS-WebDev\MS-WebDev Course\MS-Terrarium\obj\Debug\MS-Terrarium.njsproj.CoreCompileInputs.cache
+C:\Users\sergi\Desktop\Code\MS-WebDev\MS-WebDev Course\MS-Terrarium\bin\Microsoft.NodejsTools.WebRole.dll
