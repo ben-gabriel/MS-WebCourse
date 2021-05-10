@@ -34,6 +34,12 @@
     </Content>
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="style.css">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
 </Project>
