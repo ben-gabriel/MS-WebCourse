@@ -27,15 +27,15 @@ h1 {
 .plant-holder {
     height: 13%;
     position: relative;
+    
 }
 
 .plant {
     max-width: 150%;
     max-height: 150%;
     z-index: 2;
-
     position: relative;
-    left: 20%;
+    left: 15%;
 }
 
 .jar-walls {
@@ -44,7 +44,7 @@ h1 {
     background: #d1e1df;
     border-radius: 1rem;
     position: absolute;
-    bottom: 0.5%;
+    bottom: 1.5%;
     left: 25%;
     opacity: 0.5;
     z-index: 1;
@@ -55,7 +55,7 @@ h1 {
     height: 5%;
     background: #d1e1df;
     position: absolute;
-    bottom: 80.5%;
+    bottom: 81.5%;
     left: 27.5%;
     opacity: 0.7;
     z-index: 1;
@@ -67,7 +67,7 @@ h1 {
     background: #3a241d;
     position: absolute;
     border-radius: 0 0 1rem 1rem;
-    bottom: 1%;
+    bottom: 2%;
     left: 25%;
     opacity: 0.7;
     z-index: -1;
@@ -78,7 +78,7 @@ h1 {
     height: 1%;
     background: #d1e1df;
     position: absolute;
-    bottom: 0%;
+    bottom: 1%;
     left: 27.5%;
     opacity: 0.7;
 }
@@ -97,6 +97,29 @@ h1 {
 #right-container {
     order: 3;
     width: 20%;
+}
+.jar-glossy-long {
+    height: 18%;
+    width: 5%;
+    background: #e1f8f6;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 15%;
+    left: 7%;
+    opacity: 1;
+    z-index: 3;
+}
+
+.jar-glossy-short {
+    height: 8%;
+    width: 5%;
+    background: #e1f8f6;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 35%;
+    left: 7%;
+    opacity: 1;
+    z-index: 3;
 }
 
 /*
