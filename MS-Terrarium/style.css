@@ -1,8 +1,7 @@
-
 * {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,28 +11,32 @@ body {
 
 h1 {
 	color: #6da564;
+    display: flex;
+    justify-content: center;
 }
 
 .columns {
     display: flex;
-    position: absolute;
+    max-height: 100vh;
 }
 
 .container {
-    background-color: darkcyan;
-
+    background-color: #eee;
 }
 
 .plant-holder {
     height: 13%;
+    position: relative;
 }
 
 .plant {
     max-width: 150%;
     max-height: 150%;
     z-index: 2;
-}
 
+    position: relative;
+    left: 20%;
+}
 
 .jar-walls {
     height: 80%;
@@ -46,6 +49,7 @@ h1 {
     opacity: 0.5;
     z-index: 1;
 }
+
 .jar-top {
     width: 45%;
     height: 5%;
@@ -82,6 +86,7 @@ h1 {
 #center-container {
     order: 2;
     width: 60%;
+    margin-top: 2%;
 }
 
 #left-container {
