@@ -1,34 +1,45 @@
 body{
+  margin: 0;
+
   position: relative;
   
   min-height: 100vh;
-  max-height: 100vh;
-  max-width: 100vw;
+  min-width: 100%;
 
   background: rgb(245, 244, 202);
+
 }
 
-.container{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #fae2d4;
+.sandbox{
+  display: flex;
+  justify-content: center;
+  align-content: center;
 
-  }
+}
 
-  .box{
-    height: 50%;
-    width: 50%;
-  }
+.container{  
+  position: absolute;
   
-  #box1{
-    background: rgb(223, 105, 105);
-  }
   
-  #box2{
-    background: rgb(91, 190, 91);
-  }
+  height: 75%;
+  width: 75%;
+  background: #fae2d4;
   
-  #box3{
-    background: rgb(94, 94, 196);
-  }
+}
+
+.box{
+  height: 50%;
+  width: 50%;
+}
+
+#box1{
+  background: rgb(223, 105, 105);
+}
+
+#box2{
+  background: rgb(91, 190, 91);
+}
+
+#box3{
+  background: rgb(94, 94, 196);
+}
