@@ -9,6 +9,11 @@ body{
   background: rgb(156, 156, 154);
 }
 
+.nav{
+  position: absolute;
+  top: 10vh;
+}
+
 .centered{
   display: flex;
   justify-content: center;
@@ -26,9 +31,9 @@ body{
   border: black solid 3px;
 }
 
-/*change position to static see how squares change*/
+/*change position to static/absolute see how squares change*/
 .container{
-  position: static;
+  position: absolute;
   
   height: 75%;
   width: 75%;

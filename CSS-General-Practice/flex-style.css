@@ -9,6 +9,11 @@ body{
   background: rgb(156, 156, 154);
 }
 
+.nav{
+  position: absolute;
+  top: 10vh;
+}
+
 .centered{
   display: flex;
   justify-content: center;
