@@ -7,6 +7,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif, arial, sans-serif;
     min-height:100vh;
+    min-width: 100vw;
+    position: absolute;
 }
 
 h1 {
@@ -17,25 +19,26 @@ h1 {
 
 .columns {
     display: flex;
-    max-height: 100vh;
 }
 
 .container {
     background-color: #eee;
+    height: 100vh;
 }
 
 .plant-holder {
     height: 13%;
     position: relative;
-    
 }
 
 .plant {
     max-width: 150%;
     max-height: 150%;
-    z-index: 2;
-    position: relative;
+    
+    position: absolute;
     left: 15%;
+    
+    z-index: 2;
 }
 
 .jar-walls {
@@ -58,7 +61,7 @@ h1 {
     bottom: 81.5%;
     left: 32.5%;
     opacity: 0.7;
-    z-index: 1;
+    z-index: 6;
 }
 
 .dirt {
@@ -107,7 +110,7 @@ h1 {
     bottom: 15%;
     left: 7%;
     opacity: 1;
-    z-index: 3;
+    z-index: 5;
 }
 
 .jar-glossy-short {
@@ -119,7 +122,7 @@ h1 {
     bottom: 35%;
     left: 7%;
     opacity: 1;
-    z-index: 3;
+    z-index: 5;
 }
 
 /*
