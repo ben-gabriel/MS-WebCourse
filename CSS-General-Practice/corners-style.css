@@ -45,7 +45,14 @@ body{
 
 #positionChangerBtn {
   position: absolute;
-  
+  z-index: 1;
+}
+
+#text {
+  position: relative;
+  top: 10vh;
+
+  z-index: 1 ;
 }
 
 .box{

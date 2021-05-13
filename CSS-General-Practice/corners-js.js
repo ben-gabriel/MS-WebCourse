@@ -9,19 +9,17 @@ function changePositioning() {
 
     let containerPosition = classToModify.style.position;
     
-    
-    if(containerPosition === 'absolute'){
-        classToModify.style.position = 'static'
-    }
-    else if(containerPosition === 'static'){
-        classToModify.style.position = 'absolute'
-    }
-    
-    
     console.log("container position -> ", containerPosition);
     
+    if(containerPosition === 'absolute'){
+        classToModify.style.position = 'static';
+        document.getElementById("text").innerHTML = 'Static';
+    }
+    else if(containerPosition === 'static'){
+        classToModify.style.position = 'absolute';
+        document.getElementById("text").innerHTML = "Absolute";
+    }
 
-    
 }    
 
 
