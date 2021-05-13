@@ -43,6 +43,11 @@ body{
   border: rgb(255, 0, 0) solid 3px;
 }
 
+#positionChanger {
+  position: absolute;
+  
+}
+
 .box{
   position: absolute;
 

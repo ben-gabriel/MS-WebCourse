@@ -46,8 +46,7 @@ function dragElement(terrariumElement) {
         document.onpointerup = null;
         document.onpointermove = null;
     }
-
-
-
 }
+
+
 
