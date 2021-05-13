@@ -43,7 +43,7 @@ body{
   border: rgb(255, 0, 0) solid 3px;
 }
 
-#positionChanger {
+#positionChangerBtn {
   position: absolute;
   
 }
