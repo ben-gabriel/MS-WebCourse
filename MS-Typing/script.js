@@ -35,7 +35,7 @@ document.getElementById('start').addEventListener('click', () =>{
 
     const quote = quotes[quoteIndex]; // Holds current quote as a string
 
-    words = quote.split(' '); // Separetes and saves each word in the words[] array
+    words = quote.split(' '); // Separates and saves each word in the words[] array
     wordIndex = 0;
 
     const spanWords = words.map(function (word){ return `<span>${word} </span>` });
@@ -45,9 +45,18 @@ document.getElementById('start').addEventListener('click', () =>{
     quoteElement.innerHTML = spanWords.join(' ');
     // Replace the content in the DOM with the resulting string from array.join()
     
-    quoteElement.childNodes[0].className = 'highlight';    
+    quoteElement.childNodes[0].className = 'highlight';  
+    // .childNodes returns an array with the children of an element starting at Index 0   
+    // .className assigns a 'highlight' class to the first node.
 
+    messageElement.innerText = '';
+    typedValueElement.value = '';
+    // Empties the message and input elements text 
+    
+    typedValueElement.focus();
+    // .focus() brings to the front/selects the element specified when called  
+    // in this case, when pressing start btn it then jumps to the input field
 
-
-})
+    startTime = new Date().getTime();
+});
 
