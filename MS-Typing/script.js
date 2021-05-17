@@ -23,9 +23,15 @@ const messageElement = document.getElementById('message');
 const typedValueElement = document.getElementById('typed-value');
 
 
+// Start button listener logic:
+document.getElementById('start').addEventListener('click', () =>{
 
+    const quoteIndex = Math.floor(Math.random() * quotes.length);
+    // Math.random gives a random float between 0 and 1
+    // quotes.length acts as the maximun value posible (1 * ql = ql)
+    // Math.floor rounds the decimals downwards assigning quoteIndex a valid value
 
+    
 
-
-
+})
 

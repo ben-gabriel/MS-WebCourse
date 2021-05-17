@@ -11,13 +11,14 @@ body{
     display: flex;
     flex-wrap: wrap;
 
-    flex-direction: column;    
-    justify-content: center;
+    flex-direction: column; 
     align-items: center;
     
     position: absolute;
-    min-height: 75%;
+    min-height: 90%;
     min-width: 100%;
+   
+    top: 10%;
 }
 
 h1{
