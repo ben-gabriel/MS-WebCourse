@@ -60,3 +60,27 @@ document.getElementById('start').addEventListener('click', () =>{
     startTime = new Date().getTime();
 });
 
+
+// Typing listener logic:
+typedValueElement.addEventListener('input', () =>{
+
+    const currentWord = words[wordIndex];
+    const typedValue = typedValueElement.value;
+    // Holds the value of the current word and the text in the input field
+
+    if (typedValue === currentWord && wordIndex === words.length - 1){    
+        // True when last word is inputted corectly
+        const elapsedTime = new Date().getTime() - startTime;
+        messageElement.innerText = `Congratulations! You finished in ${elapsedTime / 1000} seconds.`;;
+    }else if (){
+
+    }
+
+
+});
+
+
+
+
+
+
