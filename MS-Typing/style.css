@@ -9,6 +9,8 @@ body{
     color: rgb(240, 151, 213);
 
     display: flex;
+    flex-wrap: wrap;
+
     flex-direction: column;    
     justify-content: center;
     align-items: center;
@@ -16,6 +18,27 @@ body{
     position: absolute;
     min-height: 75%;
     min-width: 100%;
+}
+
+h1{
+    font-family: saira stencil one;
+    font-size: 4vw;
+    /* 3vw size with problems using 'ctrl +' but not with resizing window*/ 
+}
+
+p {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    
+    font-family: pattaya;
+    font-size: 3vw;
+    /* 2vw size with problems using 'ctrl +' but not with resizing window*/
+}
+
+.instruction {
+    display: flex;
 }
 
 .highlight {
@@ -27,18 +50,14 @@ body{
     border: red;
 }
 
-h1{
-    font-family: saira stencil one;
-    font-size: 3vw;
-    /* 3vw size with problems using 'ctrl +' but not with resizing window*/
+.glow{
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
-p {
-    margin: 1vh;
-    font-family: pattaya;
-    font-size: 2vw;
-    /* 2vw size with problems using 'ctrl +' but not with resizing window*/
+@-webkit-keyframes glow {
+from {
+    text-shadow: 0 0 2px rgb(149, 214, 226), 0 0 2px rgb(148, 202, 223), 0 0 2px #003de6;
 }
-
+    
 
 
