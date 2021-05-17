@@ -56,9 +56,10 @@ p {
 }
 
 @-webkit-keyframes glow {
-from {
-    text-shadow: 0 0 2px rgb(149, 214, 226), 0 0 2px rgb(148, 202, 223), 0 0 2px #003de6;
+    from {
+        text-shadow: 0 0 2px rgb(149, 214, 226), 0 0 2px rgb(148, 202, 223), 0 0 2px #003de6;
+    }
 }
     
-
+/*To Do: Research more about the use of -webkit- */
 
