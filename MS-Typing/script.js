@@ -1,4 +1,6 @@
 
+// This project is based on the Chapter 4 of the Microsoft WebDev self learning course, from GitHub.
+
 // Array of quotes that are gonna be used:
 const quotes = [
     'When you have eliminated the impossible, whatever remains, however improbable, must be the truth.',
@@ -13,12 +15,14 @@ let words = []; // Array to store the current quote being typed
 
 let wordIndex = 0; // Variable to keep count of the current word's index (in the words[] array)  
 
-let startTime = Date.now();
+let startTime = Date.now(); 
 
 // Vinculate to constants the elements of the DOM
 const quoteElement = document.getElementById('quote');
 const messageElement = document.getElementById('message');
 const typedValueElement = document.getElementById('typed-value');
+
+
 
 
 
