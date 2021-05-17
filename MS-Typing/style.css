@@ -1,0 +1,28 @@
+body{
+    position: relative;
+    min-height: 95vh;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    min-height: 75%;
+    min-width: 100%;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.error {
+    background-color: lightcoral;
+    border: red;
+}
+
+
+
+
