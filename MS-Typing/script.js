@@ -15,7 +15,7 @@ const quotes = [
 
 let words = []; // Array to store the current quote being typed
 
-let wordIndex; // Variable to keep count of the current word index (in the words[] array)  
+let wordIndex = 0; // Variable to keep count of the current word index (in the words[] array)  
 
 let startTime = Date.now(); 
 
@@ -42,7 +42,7 @@ document.getElementById('start').addEventListener('click', () =>{
     // array.map() returns a new array, with elements based on the returned value 
     // of a function executed over each element of the original array.
 
-    quoteElement.innerHTML = spanWords.join(' ');
+    quoteElement.innerHTML = spanWords.join('');
     // Replace the content in the DOM with the resulting string from array.join()
     
     quoteElement.childNodes[0].className = 'highlight';  
@@ -63,22 +63,38 @@ document.getElementById('start').addEventListener('click', () =>{
 
 // Typing listener logic:
 typedValueElement.addEventListener('input', () =>{
-
+    
     const currentWord = words[wordIndex];
     const typedValue = typedValueElement.value;
     // Holds the value of the current word and the text in the input field
-
+    
     if (typedValue === currentWord && wordIndex === words.length - 1){    
-        // True when last word is inputted corectly
+        // True when the last word is inputted corectly
         const elapsedTime = new Date().getTime() - startTime;
         messageElement.innerText = `Congratulations! You finished in ${elapsedTime / 1000} seconds.`;;
-    }else if (){
+        
+    }else if (typedValue.endsWith(' ') && typedValue.trim() === currentWord){
+        // True when a mid sentence word is inputted correctly
+        // .trim removes whitespaces from both ends of a string
+        
+        typedValueElement.value = '';
+        wordIndex++;
+        // Cleans the input field and select the next element in words[]
+        
+        for (const wordElement of quoteElement.childNodes){
+            wordElement.className = '';
+        }
+        quoteElement.childNodes[wordIndex].className = 'highlight';
+        // Resets the class of all child nodes and then highlights the new word
 
-    }
+    }else if (currentWord.startsWith(typedValue)){
+        typedValueElement.className = '';
 
+    }else {
+        typedValueElement.className = 'error';
+    } // Turns the input field into .error class if the wrong word in typed
 
 });
-
 
 
 
