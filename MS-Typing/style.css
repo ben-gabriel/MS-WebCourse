@@ -1,14 +1,17 @@
 body{
     position: relative;
     min-height: 95vh;
+    background-color: rgb(76, 77, 168);
 }
 
 .main-container {
+    color: rgb(240, 151, 213);
+
     display: flex;
     flex-direction: column;    
     justify-content: center;
     align-items: center;
-
+    
     position: absolute;
     min-height: 75%;
     min-width: 100%;
@@ -23,6 +26,16 @@ body{
     border: red;
 }
 
+h1{
+    font-family: saira stencil one;
+    font-size: 3vw;
+}
+
+p {
+    margin: 1vh;
+    font-family: pattaya;
+    font-size: 2vw;
+}
 
 
 
