@@ -58,11 +58,14 @@ document.getElementById('start').addEventListener('click', () =>{
     // in this case, when pressing start btn it then jumps to the input field
 
     startTime = new Date().getTime();
+
+    typedValueElement.addEventListener('input', startInputListener); 
 });
 
 
+
 // Typing listener logic:
-typedValueElement.addEventListener('input', () =>{
+function startInputListener(){
     
     const currentWord = words[wordIndex];
     const typedValue = typedValueElement.value;
@@ -72,6 +75,8 @@ typedValueElement.addEventListener('input', () =>{
         // True when the last word is inputted corectly
         const elapsedTime = new Date().getTime() - startTime;
         messageElement.innerText = `Congratulations! You finished in ${elapsedTime / 1000} seconds.`;;
+        
+        endInputListener();
         
     }else if (typedValue.endsWith(' ') && typedValue.trim() === currentWord){
         // True when a mid sentence word is inputted correctly
@@ -94,8 +99,12 @@ typedValueElement.addEventListener('input', () =>{
         typedValueElement.className = 'error';
     } // Turns the input field into .error class if the wrong word in typed
 
-});
+};
 
+function endInputListener(){
+    typedValueElement.removeEventListener('input', startInputListener);
+    // Removes event listener when sentence is over.
+}
 
 
 
