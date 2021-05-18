@@ -43,7 +43,7 @@ body{
 h1{
     font-family: pattaya;
     font-size: 4vw;
-    /* 3vw size with problems using 'ctrl +' but not with resizing window*/ 
+    /* 4vw size.  problems using 'ctrl +' but not with resizing window*/ 
 }
 
 p {
@@ -54,22 +54,45 @@ p {
     
     font-family: 'pattaya';
     font-size: 3vw;
-    /* 2vw size with problems using 'ctrl +' but not with resizing window*/
+    /* 3vw size. problems using 'ctrl +' but not with resizing window*/
 }
 
 .btn{
     background: linear-gradient(60deg,
     rgb(160, 223, 228),rgb(144, 224, 230));
+    
     border: 2px solid beige;
-    color: rgb(0, 0, 0);
-    padding: 15px 32px;
+    border-radius:  5px;
+    
+    color: rgb(235, 149, 21);
+    padding: 5px 30px;
+
     text-align: center;
     display: inline-block;
+    
     font-size: 3vw;
+    font-family: pattaya;
+}
+
+.btn:hover{
+    border: 2px solid rgb(235, 149, 21);
+}
+
+.btn:focus{
+    background: linear-gradient(0deg,
+    rgb(193, 235, 238),rgb(214, 246, 248));
 }
 
 #typed-value{
     visibility: hidden;
+    width: 50vw;
+    height: 10vh;
+
+    font-size: 4vw;
+    font-family: pattaya;
+
+    color: rgb(235, 149, 21);
+    text-align: center;
 }
 
 .instruction {
@@ -81,7 +104,7 @@ p {
 }
 
 .error {
-    background-color: lightcoral;
+    background-color: rgb(243, 217, 217);
     border: red;
 }
 

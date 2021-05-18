@@ -5,12 +5,11 @@
 
 // Array of quotes that are gonna be used:
 const quotes = [
-    'When you have eliminated the impossible, whatever remains, however improbable, must be the truth.',
-    'There is nothing more deceptive than an obvious fact.',
-    'I never make exceptions. An exception disproves the rule.',
-    'What one man can invent another can discover.',
-    'Nothing clears up a case so much as stating it to another person.',
-    'Education never ends, Watson. It is a series of lessons, with the greatest for the last.',
+    'there is nothing more deceptive than an obvious fact',
+    'i never make exceptions. An exception disproves the rule',
+    'what one man can invent another can discover',
+    'nothing clears up a case so much as stating it to another person',
+    'education never ends Watson. It is a series of lessons with the greatest for the last',
 ];
 
 let words = []; // Array to store the current quote being typed
