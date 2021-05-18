@@ -3,13 +3,13 @@ body{
     margin: 0;
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(0deg, rgb(0, 106, 124),
-     rgb(175, 236, 240));
+    background: linear-gradient(0deg,
+     rgb(180, 247, 253),rgb(72, 209, 219), rgb(1, 172, 202));
 }       
 
 
 .main-container {
-    color: rgb(41, 14, 46);
+    color: rgb(0, 0, 0);
     
     display: flex;
     flex-wrap: wrap;
@@ -52,9 +52,13 @@ p {
     margin-top: 1vh;
     margin-bottom: 1vh;
     
-    font-family: 'open sans';
+    font-family: 'pattaya';
     font-size: 3vw;
     /* 2vw size with problems using 'ctrl +' but not with resizing window*/
+}
+
+#typed-value{
+    visibility: hidden;
 }
 
 .instruction {
@@ -62,7 +66,7 @@ p {
 }
 
 .highlight {
-    background-color: yellow;
+    color: blanchedalmond;
 }
 
 .error {
@@ -70,15 +74,6 @@ p {
     border: red;
 }
 
-.glow{
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-    from {
-        text-shadow: 0 0 2px rgb(149, 214, 226), 0 0 2px rgb(148, 202, 223), 0 0 2px #003de6;
-    }
-}
     
 /*To Do: Research more about the use of -webkit- */
 

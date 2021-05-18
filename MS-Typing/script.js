@@ -54,6 +54,7 @@ document.getElementById('start').addEventListener('click', () =>{
     // Empties the message and input elements text 
     
     typedValueElement.disabled = false;
+    typedValueElement.style.visibility = 'visible';
     typedValueElement.focus();
     // .focus() brings to the front/selects the element specified when called  
     // in this case, when pressing start btn it then jumps to the input field
@@ -106,6 +107,7 @@ function endInputListener(){
     typedValueElement.removeEventListener('input', startInputListener);
     // Removes event listener when sentence is over.
     typedValueElement.disabled = true;
+    typedValueElement.style.visibility = 'hidden';
 }
 
 
