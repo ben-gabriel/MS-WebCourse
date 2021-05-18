@@ -57,6 +57,17 @@ p {
     /* 2vw size with problems using 'ctrl +' but not with resizing window*/
 }
 
+.btn{
+    background: linear-gradient(60deg,
+    rgb(160, 223, 228),rgb(144, 224, 230));
+    border: 2px solid beige;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 3vw;
+}
+
 #typed-value{
     visibility: hidden;
 }
