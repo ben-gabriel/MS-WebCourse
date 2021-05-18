@@ -1,28 +1,47 @@
 
 body{
+    margin: 0;
     position: relative;
-    min-height: 95vh;
-    background-color: rgb(76, 77, 168);
-}
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgb(0, 106, 124),
+     rgb(175, 236, 240));
+}       
+
 
 .main-container {
-    color: rgb(240, 151, 213);
-
+    color: rgb(41, 14, 46);
+    
     display: flex;
     flex-wrap: wrap;
-
+    
     flex-direction: column; 
     align-items: center;
     
     position: absolute;
     min-height: 90%;
     min-width: 100%;
-   
+    
     top: 10%;
 }
 
+#image-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sherlock-image{
+    height: 10vh;
+    align-self: center;
+}
+
+.feather-image{
+    height: 10vh;
+    align-self: center;
+}
+
 h1{
-    font-family: saira stencil one;
+    font-family: pattaya;
     font-size: 4vw;
     /* 3vw size with problems using 'ctrl +' but not with resizing window*/ 
 }
@@ -33,7 +52,7 @@ p {
     margin-top: 1vh;
     margin-bottom: 1vh;
     
-    font-family: pattaya;
+    font-family: 'open sans';
     font-size: 3vw;
     /* 2vw size with problems using 'ctrl +' but not with resizing window*/
 }

@@ -53,13 +53,14 @@ document.getElementById('start').addEventListener('click', () =>{
     typedValueElement.value = '';
     // Empties the message and input elements text 
     
+    typedValueElement.disabled = false;
     typedValueElement.focus();
     // .focus() brings to the front/selects the element specified when called  
     // in this case, when pressing start btn it then jumps to the input field
+    typedValueElement.addEventListener('input', startInputListener); 
 
     startTime = new Date().getTime();
 
-    typedValueElement.addEventListener('input', startInputListener); 
 });
 
 
@@ -104,6 +105,7 @@ function startInputListener(){
 function endInputListener(){
     typedValueElement.removeEventListener('input', startInputListener);
     // Removes event listener when sentence is over.
+    typedValueElement.disabled = true;
 }
 
 
