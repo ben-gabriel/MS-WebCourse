@@ -1,19 +1,12 @@
-// callback function practice
-//
-//A callback is a function passed as an argument to another function
-//This technique allows a function to call another function
-//A callback function can run after another function has finished
-//
-//setTimeout(function, milliseconds, param1, param2, ...)
-function myCallBack (n){
-    console.log("this is the message number " + n);
-}
+// draws a red rectangle
+//1. get the canvas reference
+canvas = document.getElementById("myCanvas");
 
-setTimeout(()=>{
-    myCallBack(1);
-},3000);
+//2. set the context to 2D to draw basic shapes
+ctx = canvas.getContext("2d");
 
-setTimeout(myCallBack, 2000, 2);
+//3. fill it with the color red
+ctx.fillStyle = 'red';
 
-myCallBack(3);
-
+//4. and draw a rectangle with these parameters, setting location and size
+ctx.fillRect(0,0, 200, 200) // x,y,width, height
