@@ -12,6 +12,7 @@ ctx.fillStyle = 'red';
 ctx.fillRect(0,0, 200, 200) // x,y,width, height
 
 // callback function practice
+//setTimeout(function, milliseconds, param1, param2, ...)
 function myCallBack (n){
     console.log("this is the message number " + n);
 }
@@ -20,7 +21,7 @@ setTimeout(()=>{
     myCallBack(1);
 },3000);
 
-setTimeout(myCallBack, 2000);
+setTimeout(myCallBack, 2000, 2);
 
 myCallBack(3);
 
