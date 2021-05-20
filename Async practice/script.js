@@ -10,26 +10,23 @@ function myCallBack (n){
     console.log("this is the message number " + n);
 }
 
-/*
-setTimeout(()=>{
-    myCallBack(1);
-},3000);
+// setTimeout(()=>{
+//     myCallBack(1);
+// },3000);
 
-setTimeout(myCallBack, 2000, 2);
+// setTimeout(myCallBack, 2000, 2);
 
 myCallBack(3);
-*/
 
-myVar = "word";
 
 const myPromise = new Promise((resolve, reject) =>{
     const rand = Math.floor(Math.random()*2);
     const cond = true;
 
-    if (cond){
-        resolve();
+    if (rand === 0){
+        resolve(", success message");
     }else{
-        reject();
+        reject(", error message");
     }
     
 });
@@ -39,5 +36,16 @@ myPromise
     .catch(() => console.log('Error'));
 
 myPromise
-    .then()
-    .catch(myCallBack);
+    .then((msg) => {myCallBack(4 + msg)})
+    .catch((err) => {myCallBack(5 + err)});
+
+const myAsync = async () => {
+    try {
+        const awaitVar = await myPromise;
+        myCallBack(6 + awaitVar);
+    } catch (error) {
+        myCallBack(7 + error);       
+    }
+}
+
+myAsync();
