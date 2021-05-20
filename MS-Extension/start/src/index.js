@@ -39,7 +39,7 @@ function reset(e){
     init();
 }
 
-function handleSubtmi(e){
+function handleSubmit(e){
     e.preventDefault();
     setUpUser(apiKey.value, region.value);
 }
