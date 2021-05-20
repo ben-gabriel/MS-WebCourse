@@ -25,5 +25,53 @@ function init(){
         loadingstyle.display = 'none';
         clearBtn.style.display = 'none';
         errors.textContent = '';    
+    }else{
+        displayCarbonUsage(storedApiKey,storedRegion);
+        results.style.display = 'none';
+        form.style.display = 'none';
+        clearBtn.style.display = 'block';    
     }
 }
+
+function reset(e){
+    e.preventDefault();
+    localStorage.removeItem('regionName');
+    init();
+}
+
+function handleSubtmi(e){
+    e.preventDefault();
+    setUpUser(apiKey.value, region.value);
+}
+
+function setUpUser(apiKey,regionName){
+    localStorage.setItem('apiKey', apiKey);
+    localStorage.setItem('regionName', regionName);
+    
+    loading.style.display = 'block';
+    errors.textContent = '';
+    clearBtn.style.display = 'block';
+
+    displayCarbonUsage(apiKey, regionName);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
