@@ -16,7 +16,7 @@ function myCallBack (n){
 
 // setTimeout(myCallBack, 2000, 2);
 
-myCallBack(3);
+ myCallBack(3);
 
 
 const myPromise = new Promise((resolve, reject) =>{
