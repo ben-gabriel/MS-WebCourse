@@ -10,6 +10,7 @@ function myCallBack (n){
     console.log("this is the message number " + n);
 }
 
+/*
 setTimeout(()=>{
     myCallBack(1);
 },3000);
@@ -17,4 +18,26 @@ setTimeout(()=>{
 setTimeout(myCallBack, 2000, 2);
 
 myCallBack(3);
+*/
 
+myVar = "word";
+
+const myPromise = new Promise((resolve, reject) =>{
+    const rand = Math.floor(Math.random()*2);
+    const cond = true;
+
+    if (cond){
+        resolve();
+    }else{
+        reject();
+    }
+    
+});
+
+myPromise
+    .then(() => console.log("Success"))
+    .catch(() => console.log('Error'));
+
+myPromise
+    .then()
+    .catch(myCallBack);
