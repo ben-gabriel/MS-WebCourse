@@ -1,17 +1,29 @@
-//1
-// campi del form
-// risultati
 
-//6
-//chiamata API
+const form = document.querySelector('.form-data');
+const region = document.querySelector('.region-name');
+const apiKey = document.querySelector('.api-key');
 
-//5
-//imposta la chiave api e la regione per l'utente
+const errors = document.querySelector('.errors');
+const loading = document.querySelector('.loading');
+const results = document.querySelector('.result-container');
+const usage = document.querySelector('.carbon-usage');
+const fossilfuel = document.querySelector('.fossil-fuel');
+const myregion = document.querySelector('.my-region');
+const clearBtn = document.querySelector('.clear-btn');
 
-//4
-// gestisce l'invio del form
+form.addEventListener('submit', (e) => handleSubmit(e));
+clearBtn.addEventListener('click', (e) => reset(e));
+init();
 
-//3 controlli iniziali
+function init(){
+    const storedApiKey = localStorage.getItem('apiKey');
+    const storedRegion = localStorage.getItem('regionName');
 
-//2
-// imposta i listeners e la partenza dell'app
+    if (storedApiKey === null || storedRegion === null){
+        form.style.display = 'block';
+        results.style.display = 'none';
+        loadingstyle.display = 'none';
+        clearBtn.style.display = 'none';
+        errors.textContent = '';    
+    }
+}
