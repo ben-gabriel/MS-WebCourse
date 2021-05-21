@@ -11,6 +11,7 @@
 const child1 = document.getElementById('c1');
 const child2 = document.getElementById('c2');
 const btn = document.getElementById('btn');
+const g_btn = document.getElementById('ghost-btn');
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -32,6 +33,9 @@ function changeColorRandom(element){
 //btn.addEventListener('click', () => {changeColorRandom(child2)});
 btn.addEventListener('click', changeColorRandom.bind(null,child2));
 
+btn.addEventListener('mouseup', () => {
+    g_btn.focus();
+});
 
 setInterval(() => {
     changeColorRandom(child1);
