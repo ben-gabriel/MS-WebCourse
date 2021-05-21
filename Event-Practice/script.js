@@ -34,6 +34,7 @@ btn.addEventListener('mouseup', () => {
     g_btn.focus();
 });
 
+//element.setInterval(myCallback, *miliseconds, 'Parameter 1', 'Parameter 2');
 setInterval(() => {
     changeColorRandom(child1);
-}, 1000);
+}, 1000); //miliseconds
