@@ -48,4 +48,4 @@ const myAsync = async () => {
     }
 }
 
-myAsync();
+myAsync();  
