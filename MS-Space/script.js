@@ -10,3 +10,4 @@ ctx.fillStyle = 'red';
 
 //4. and draw a rectangle with these parameters, setting location and size
 ctx.fillRect(0,0, 200, 200) // x,y,width, height
+
